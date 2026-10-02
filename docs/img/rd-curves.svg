@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1066 554" width="1066" height="554" role="img" aria-labelledby="t d">
+<title id="t">Bytes versus quality per content type</title>
+<desc id="d">For each of seven content types, mean LZ4 bytes per frame relative to today's plain quantization (x) against MS-SSIM (y), at 16, 12, 8, 6 and 4 levels, for plain quantization, Bayer 2×2 and Floyd–Steinberg. Floyd–Steinberg sits to the right (more bytes); Bayer 2×2 runs close to plain quantization. Data: results/phase1/report.md.</desc>
+
+  <style>
+    svg { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7;
+          --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      svg { --surface:#1a1a19; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781; --grid:#2c2c2a; --axis:#383835;
+            --s1:#3987e5; --s2:#d95926; --s3:#199e70; }
+    }
+    .bg { fill: var(--surface); }
+    .title { fill: var(--ink); font-size: 15px; font-weight: 600; }
+    .sub { fill: var(--ink2); font-size: 12px; }
+    .panel { fill: var(--ink); font-size: 13px; font-weight: 600; }
+    .tick { fill: var(--muted); font-size: 10.5px; font-variant-numeric: tabular-nums; }
+    .label { fill: var(--ink2); font-size: 11px; }
+    .grid { stroke: var(--grid); stroke-width: 1; }
+    .axis { stroke: var(--axis); stroke-width: 1; }
+    .line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+    .dot { stroke: var(--surface); stroke-width: 2; }
+  </style>
+<rect class="bg" width="1066" height="554"/>
+<text class="title" x="16" y="26">Dithering buys quality with bytes; it does not beat plain quantization at equal quality</text>
+<text class="sub" x="16" y="46">Mean over 5 images per type. x: LZ4 bytes per frame vs. today (plain, 16 levels = 100 %). y: MS-SSIM vs. the 8-bit source. Points: 16 → 4 levels, right to left.</text>
+<line x1="16" y1="68" x2="34" y2="68" stroke="var(--s1)" class="line"/><circle cx="25" cy="68" r="4" fill="var(--s1)" class="dot"/>
+<text class="label" x="40" y="72">Plain quantization (today)</text>
+<line x1="225.79999999999998" y1="68" x2="243.79999999999998" y2="68" stroke="var(--s2)" class="line"/><circle cx="234.79999999999998" cy="68" r="4" fill="var(--s2)" class="dot"/>
+<text class="label" x="249.79999999999998" y="72">Bayer 2×2 ordered</text>
+<line x1="378.9" y1="68" x2="396.9" y2="68" stroke="var(--s3)" class="line"/><circle cx="387.9" cy="68" r="4" fill="var(--s3)" class="dot"/>
+<text class="label" x="402.9" y="72">Floyd–Steinberg</text>
+<text class="panel" x="56" y="92">ui</text>
+<line class="grid" x1="56" x2="256" y1="231.73861646306173" y2="231.73861646306173"/>
+<text class="tick" x="50" y="235.23861646306173" text-anchor="end">0.97</text>
+<line class="grid" x1="56" x2="256" y1="190.49241097537447" y2="190.49241097537447"/>
+<text class="tick" x="50" y="193.99241097537447" text-anchor="end">0.98</text>
+<line class="grid" x1="56" x2="256" y1="149.24620548768723" y2="149.24620548768723"/>
+<text class="tick" x="50" y="152.74620548768723" text-anchor="end">0.99</text>
+<line class="grid" x1="56" x2="256" y1="108" y2="108"/>
+<text class="tick" x="50" y="111.5" text-anchor="end">1.00</text>
+<line class="axis" x1="56" x2="256" y1="268" y2="268"/>
+<text class="tick" x="56" y="283" text-anchor="middle">50 %</text>
+<text class="tick" x="113.09214688991128" y="283" text-anchor="middle">75 %</text>
+<text class="tick" x="170.18429377982255" y="283" text-anchor="middle">100 %</text>
+<text class="tick" x="227.27644066973383" y="283" text-anchor="middle">125 %</text>
+<line class="axis" x1="170.18429377982255" x2="170.18429377982255" y1="108" y2="268" stroke-dasharray="0"/>
+<polyline class="line" stroke="var(--s1)" points="170.2,122.3 162.8,137.2 146.3,158.6 138.5,171.1 124.9,268.0"/>
+<circle class="dot" cx="170.2" cy="122.3" r="4" fill="var(--s1)"><title>Plain quantization (today), 16 levels: 100 % bytes, MS-SSIM 0.9965</title></circle>
+<circle class="dot" cx="162.8" cy="137.2" r="4" fill="var(--s1)"><title>Plain quantization (today), 12 levels: 97 % bytes, MS-SSIM 0.9929</title></circle>
+<circle class="dot" cx="146.3" cy="158.6" r="4" fill="var(--s1)"><title>Plain quantization (today), 8 levels: 90 % bytes, MS-SSIM 0.9877</title></circle>
+<circle class="dot" cx="138.5" cy="171.1" r="4" fill="var(--s1)"><title>Plain quantization (today), 6 levels: 86 % bytes, MS-SSIM 0.9847</title></circle>
+<circle class="dot" cx="124.9" cy="268.0" r="4" fill="var(--s1)"><title>Plain quantization (today), 4 levels: 80 % bytes, MS-SSIM 0.9612</title></circle>
+<polyline class="line" stroke="var(--s2)" points="189.9,115.6 183.7,122.4 172.6,127.8 165.7,130.5 152.7,150.6"/>
+<circle class="dot" cx="189.9" cy="115.6" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 16 levels: 109 % bytes, MS-SSIM 0.9982</title></circle>
+<circle class="dot" cx="183.7" cy="122.4" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 12 levels: 106 % bytes, MS-SSIM 0.9965</title></circle>
+<circle class="dot" cx="172.6" cy="127.8" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 8 levels: 101 % bytes, MS-SSIM 0.9952</title></circle>
+<circle class="dot" cx="165.7" cy="130.5" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 6 levels: 98 % bytes, MS-SSIM 0.9945</title></circle>
+<circle class="dot" cx="152.7" cy="150.6" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 4 levels: 92 % bytes, MS-SSIM 0.9897</title></circle>
+<polyline class="line" stroke="var(--s3)" points="256.0,117.4 248.9,126.7 243.2,134.0 229.6,145.9 224.8,167.4"/>
+<circle class="dot" cx="256.0" cy="117.4" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 16 levels: 138 % bytes, MS-SSIM 0.9977</title></circle>
+<circle class="dot" cx="248.9" cy="126.7" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 12 levels: 134 % bytes, MS-SSIM 0.9955</title></circle>
+<circle class="dot" cx="243.2" cy="134.0" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 8 levels: 132 % bytes, MS-SSIM 0.9937</title></circle>
+<circle class="dot" cx="229.6" cy="145.9" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 6 levels: 126 % bytes, MS-SSIM 0.9908</title></circle>
+<circle class="dot" cx="224.8" cy="167.4" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 4 levels: 124 % bytes, MS-SSIM 0.9856</title></circle>
+<text class="label" x="176.18429377982255" y="138.33297863441402">today</text>
+<text class="panel" x="318" y="92">chart</text>
+<line class="grid" x1="318" x2="518" y1="241.5784654495071" y2="241.5784654495071"/>
+<text class="tick" x="312" y="245.0784654495071" text-anchor="end">0.97</text>
+<line class="grid" x1="318" x2="518" y1="197.05231029967138" y2="197.05231029967138"/>
+<text class="tick" x="312" y="200.55231029967138" text-anchor="end">0.98</text>
+<line class="grid" x1="318" x2="518" y1="152.5261551498357" y2="152.5261551498357"/>
+<text class="tick" x="312" y="156.0261551498357" text-anchor="end">0.99</text>
+<line class="grid" x1="318" x2="518" y1="108" y2="108"/>
+<text class="tick" x="312" y="111.5" text-anchor="end">1.00</text>
+<line class="axis" x1="318" x2="518" y1="268" y2="268"/>
+<text class="tick" x="318" y="283" text-anchor="middle">50 %</text>
+<text class="tick" x="386.31829374594" y="283" text-anchor="middle">100 %</text>
+<text class="tick" x="454.63658749188005" y="283" text-anchor="middle">150 %</text>
+<line class="axis" x1="386.31829374594" x2="386.31829374594" y1="108" y2="268" stroke-dasharray="0"/>
+<polyline class="line" stroke="var(--s1)" points="386.3,121.6 382.8,128.3 378.9,150.0 373.3,146.4 366.3,268.0"/>
+<circle class="dot" cx="386.3" cy="121.6" r="4" fill="var(--s1)"><title>Plain quantization (today), 16 levels: 100 % bytes, MS-SSIM 0.9969</title></circle>
+<circle class="dot" cx="382.8" cy="128.3" r="4" fill="var(--s1)"><title>Plain quantization (today), 12 levels: 97 % bytes, MS-SSIM 0.9954</title></circle>
+<circle class="dot" cx="378.9" cy="150.0" r="4" fill="var(--s1)"><title>Plain quantization (today), 8 levels: 95 % bytes, MS-SSIM 0.9906</title></circle>
+<circle class="dot" cx="373.3" cy="146.4" r="4" fill="var(--s1)"><title>Plain quantization (today), 6 levels: 90 % bytes, MS-SSIM 0.9914</title></circle>
+<circle class="dot" cx="366.3" cy="268.0" r="4" fill="var(--s1)"><title>Plain quantization (today), 4 levels: 85 % bytes, MS-SSIM 0.9641</title></circle>
+<polyline class="line" stroke="var(--s2)" points="393.8,116.5 388.6,119.6 389.3,130.0 385.2,132.0 379.9,157.6"/>
+<circle class="dot" cx="393.8" cy="116.5" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 16 levels: 105 % bytes, MS-SSIM 0.9981</title></circle>
+<circle class="dot" cx="388.6" cy="119.6" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 12 levels: 102 % bytes, MS-SSIM 0.9974</title></circle>
+<circle class="dot" cx="389.3" cy="130.0" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 8 levels: 102 % bytes, MS-SSIM 0.9951</title></circle>
+<circle class="dot" cx="385.2" cy="132.0" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 6 levels: 99 % bytes, MS-SSIM 0.9946</title></circle>
+<circle class="dot" cx="379.9" cy="157.6" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 4 levels: 95 % bytes, MS-SSIM 0.9889</title></circle>
+<polyline class="line" stroke="var(--s3)" points="518.0,117.4 501.9,131.7 507.7,135.1 498.9,142.1 506.4,184.8"/>
+<circle class="dot" cx="518.0" cy="117.4" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 16 levels: 196 % bytes, MS-SSIM 0.9979</title></circle>
+<circle class="dot" cx="501.9" cy="131.7" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 12 levels: 185 % bytes, MS-SSIM 0.9947</title></circle>
+<circle class="dot" cx="507.7" cy="135.1" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 8 levels: 189 % bytes, MS-SSIM 0.9939</title></circle>
+<circle class="dot" cx="498.9" cy="142.1" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 6 levels: 182 % bytes, MS-SSIM 0.9923</title></circle>
+<circle class="dot" cx="506.4" cy="184.8" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 4 levels: 188 % bytes, MS-SSIM 0.9828</title></circle>
+<text class="panel" x="580" y="92">text</text>
+<line class="grid" x1="580" x2="780" y1="243.7621205217097" y2="243.7621205217097"/>
+<text class="tick" x="574" y="247.2621205217097" text-anchor="end">0.985</text>
+<line class="grid" x1="580" x2="780" y1="198.50808034780647" y2="198.50808034780647"/>
+<text class="tick" x="574" y="202.00808034780647" text-anchor="end">0.990</text>
+<line class="grid" x1="580" x2="780" y1="153.25404017390323" y2="153.25404017390323"/>
+<text class="tick" x="574" y="156.75404017390323" text-anchor="end">0.995</text>
+<line class="grid" x1="580" x2="780" y1="108" y2="108"/>
+<text class="tick" x="574" y="111.5" text-anchor="end">1.000</text>
+<line class="axis" x1="580" x2="780" y1="268" y2="268"/>
+<text class="tick" x="580" y="283" text-anchor="middle">40 %</text>
+<text class="tick" x="633.8554400323105" y="283" text-anchor="middle">60 %</text>
+<text class="tick" x="687.710880064621" y="283" text-anchor="middle">80 %</text>
+<text class="tick" x="741.5663200969315" y="283" text-anchor="middle">100 %</text>
+<line class="axis" x1="741.5663200969315" x2="741.5663200969315" y1="108" y2="268" stroke-dasharray="0"/>
+<polyline class="line" stroke="var(--s1)" points="741.6,111.2 737.4,116.8 728.2,115.4 719.5,123.1 709.4,268.0"/>
+<circle class="dot" cx="741.6" cy="111.2" r="4" fill="var(--s1)"><title>Plain quantization (today), 16 levels: 100 % bytes, MS-SSIM 0.9996</title></circle>
+<circle class="dot" cx="737.4" cy="116.8" r="4" fill="var(--s1)"><title>Plain quantization (today), 12 levels: 98 % bytes, MS-SSIM 0.9990</title></circle>
+<circle class="dot" cx="728.2" cy="115.4" r="4" fill="var(--s1)"><title>Plain quantization (today), 8 levels: 95 % bytes, MS-SSIM 0.9992</title></circle>
+<circle class="dot" cx="719.5" cy="123.1" r="4" fill="var(--s1)"><title>Plain quantization (today), 6 levels: 92 % bytes, MS-SSIM 0.9983</title></circle>
+<circle class="dot" cx="709.4" cy="268.0" r="4" fill="var(--s1)"><title>Plain quantization (today), 4 levels: 88 % bytes, MS-SSIM 0.9823</title></circle>
+<polyline class="line" stroke="var(--s2)" points="761.7,110.1 755.8,112.9 744.9,114.9 740.0,118.7 727.6,132.9"/>
+<circle class="dot" cx="761.7" cy="110.1" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 16 levels: 107 % bytes, MS-SSIM 0.9998</title></circle>
+<circle class="dot" cx="755.8" cy="112.9" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 12 levels: 105 % bytes, MS-SSIM 0.9995</title></circle>
+<circle class="dot" cx="744.9" cy="114.9" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 8 levels: 101 % bytes, MS-SSIM 0.9992</title></circle>
+<circle class="dot" cx="740.0" cy="118.7" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 6 levels: 99 % bytes, MS-SSIM 0.9988</title></circle>
+<circle class="dot" cx="727.6" cy="132.9" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 4 levels: 95 % bytes, MS-SSIM 0.9972</title></circle>
+<polyline class="line" stroke="var(--s3)" points="780.0,110.0 776.8,112.9 764.1,113.5 761.3,117.2 746.3,127.3"/>
+<circle class="dot" cx="780.0" cy="110.0" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 16 levels: 114 % bytes, MS-SSIM 0.9998</title></circle>
+<circle class="dot" cx="776.8" cy="112.9" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 12 levels: 113 % bytes, MS-SSIM 0.9995</title></circle>
+<circle class="dot" cx="764.1" cy="113.5" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 8 levels: 108 % bytes, MS-SSIM 0.9994</title></circle>
+<circle class="dot" cx="761.3" cy="117.2" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 6 levels: 107 % bytes, MS-SSIM 0.9990</title></circle>
+<circle class="dot" cx="746.3" cy="127.3" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 4 levels: 102 % bytes, MS-SSIM 0.9979</title></circle>
+<text class="panel" x="842" y="92">line-art</text>
+<line class="grid" x1="842" x2="1042" y1="260.6087262158806" y2="260.6087262158806"/>
+<text class="tick" x="836" y="264.1087262158806" text-anchor="end">0.994</text>
+<line class="grid" x1="842" x2="1042" y1="209.7391508105871" y2="209.7391508105871"/>
+<text class="tick" x="836" y="213.2391508105871" text-anchor="end">0.996</text>
+<line class="grid" x1="842" x2="1042" y1="158.86957540529355" y2="158.86957540529355"/>
+<text class="tick" x="836" y="162.36957540529355" text-anchor="end">0.998</text>
+<line class="grid" x1="842" x2="1042" y1="108" y2="108"/>
+<text class="tick" x="836" y="111.5" text-anchor="end">1.000</text>
+<line class="axis" x1="842" x2="1042" y1="268" y2="268"/>
+<text class="tick" x="842" y="283" text-anchor="middle">40 %</text>
+<text class="tick" x="894.1569783095072" y="283" text-anchor="middle">60 %</text>
+<text class="tick" x="946.3139566190144" y="283" text-anchor="middle">80 %</text>
+<text class="tick" x="998.4709349285217" y="283" text-anchor="middle">100 %</text>
+<line class="axis" x1="998.4709349285217" x2="998.4709349285217" y1="108" y2="268" stroke-dasharray="0"/>
+<polyline class="line" stroke="var(--s1)" points="998.5,113.6 991.1,130.7 980.6,130.5 970.3,176.0 959.4,268.0"/>
+<circle class="dot" cx="998.5" cy="113.6" r="4" fill="var(--s1)"><title>Plain quantization (today), 16 levels: 100 % bytes, MS-SSIM 0.9998</title></circle>
+<circle class="dot" cx="991.1" cy="130.7" r="4" fill="var(--s1)"><title>Plain quantization (today), 12 levels: 97 % bytes, MS-SSIM 0.9991</title></circle>
+<circle class="dot" cx="980.6" cy="130.5" r="4" fill="var(--s1)"><title>Plain quantization (today), 8 levels: 93 % bytes, MS-SSIM 0.9991</title></circle>
+<circle class="dot" cx="970.3" cy="176.0" r="4" fill="var(--s1)"><title>Plain quantization (today), 6 levels: 89 % bytes, MS-SSIM 0.9973</title></circle>
+<circle class="dot" cx="959.4" cy="268.0" r="4" fill="var(--s1)"><title>Plain quantization (today), 4 levels: 85 % bytes, MS-SSIM 0.9937</title></circle>
+<polyline class="line" stroke="var(--s2)" points="1010.5,111.8 1003.9,124.5 997.7,128.9 988.8,154.5 975.3,221.5"/>
+<circle class="dot" cx="1010.5" cy="111.8" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 16 levels: 105 % bytes, MS-SSIM 0.9998</title></circle>
+<circle class="dot" cx="1003.9" cy="124.5" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 12 levels: 102 % bytes, MS-SSIM 0.9994</title></circle>
+<circle class="dot" cx="997.7" cy="128.9" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 8 levels: 100 % bytes, MS-SSIM 0.9992</title></circle>
+<circle class="dot" cx="988.8" cy="154.5" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 6 levels: 96 % bytes, MS-SSIM 0.9982</title></circle>
+<circle class="dot" cx="975.3" cy="221.5" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 4 levels: 91 % bytes, MS-SSIM 0.9955</title></circle>
+<polyline class="line" stroke="var(--s3)" points="1040.8,112.0 1031.9,122.2 1042.0,122.0 1019.7,145.3 1025.0,196.1"/>
+<circle class="dot" cx="1040.8" cy="112.0" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 16 levels: 116 % bytes, MS-SSIM 0.9998</title></circle>
+<circle class="dot" cx="1031.9" cy="122.2" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 12 levels: 113 % bytes, MS-SSIM 0.9994</title></circle>
+<circle class="dot" cx="1042.0" cy="122.0" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 8 levels: 117 % bytes, MS-SSIM 0.9994</title></circle>
+<circle class="dot" cx="1019.7" cy="145.3" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 6 levels: 108 % bytes, MS-SSIM 0.9985</title></circle>
+<circle class="dot" cx="1025.0" cy="196.1" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 4 levels: 110 % bytes, MS-SSIM 0.9965</title></circle>
+<text class="panel" x="56" y="322">game</text>
+<line class="grid" x1="56" x2="256" y1="459.6534912308109" y2="459.6534912308109"/>
+<text class="tick" x="50" y="463.1534912308109" text-anchor="end">0.94</text>
+<line class="grid" x1="56" x2="256" y1="419.1023274872073" y2="419.1023274872073"/>
+<text class="tick" x="50" y="422.6023274872073" text-anchor="end">0.96</text>
+<line class="grid" x1="56" x2="256" y1="378.55116374360364" y2="378.55116374360364"/>
+<text class="tick" x="50" y="382.05116374360364" text-anchor="end">0.98</text>
+<line class="grid" x1="56" x2="256" y1="338" y2="338"/>
+<text class="tick" x="50" y="341.5" text-anchor="end">1.00</text>
+<line class="axis" x1="56" x2="256" y1="498" y2="498"/>
+<text class="tick" x="56" y="513" text-anchor="middle">100 %</text>
+<text class="tick" x="115.51799380197508" y="513" text-anchor="middle">200 %</text>
+<text class="tick" x="175.03598760395016" y="513" text-anchor="middle">300 %</text>
+<text class="tick" x="234.55398140592524" y="513" text-anchor="middle">400 %</text>
+<line class="axis" x1="56" x2="56" y1="338" y2="498" stroke-dasharray="0"/>
+<polyline class="line" stroke="var(--s1)" points="56.0,361.8 54.1,366.9 52.1,396.4 50.1,413.7 47.3,498.0"/>
+<circle class="dot" cx="56.0" cy="361.8" r="4" fill="var(--s1)"><title>Plain quantization (today), 16 levels: 100 % bytes, MS-SSIM 0.9882</title></circle>
+<circle class="dot" cx="54.1" cy="366.9" r="4" fill="var(--s1)"><title>Plain quantization (today), 12 levels: 97 % bytes, MS-SSIM 0.9857</title></circle>
+<circle class="dot" cx="52.1" cy="396.4" r="4" fill="var(--s1)"><title>Plain quantization (today), 8 levels: 93 % bytes, MS-SSIM 0.9712</title></circle>
+<circle class="dot" cx="50.1" cy="413.7" r="4" fill="var(--s1)"><title>Plain quantization (today), 6 levels: 90 % bytes, MS-SSIM 0.9627</title></circle>
+<circle class="dot" cx="47.3" cy="498.0" r="4" fill="var(--s1)"><title>Plain quantization (today), 4 levels: 85 % bytes, MS-SSIM 0.9211</title></circle>
+<polyline class="line" stroke="var(--s2)" points="72.4,353.0 65.3,359.4 70.9,386.7 65.5,405.0 62.1,451.9"/>
+<circle class="dot" cx="72.4" cy="353.0" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 16 levels: 128 % bytes, MS-SSIM 0.9926</title></circle>
+<circle class="dot" cx="65.3" cy="359.4" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 12 levels: 116 % bytes, MS-SSIM 0.9894</title></circle>
+<circle class="dot" cx="70.9" cy="386.7" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 8 levels: 125 % bytes, MS-SSIM 0.9760</title></circle>
+<circle class="dot" cx="65.5" cy="405.0" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 6 levels: 116 % bytes, MS-SSIM 0.9670</title></circle>
+<circle class="dot" cx="62.1" cy="451.9" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 4 levels: 110 % bytes, MS-SSIM 0.9438</title></circle>
+<polyline class="line" stroke="var(--s3)" points="256.0,353.9 241.5,362.2 239.6,394.7 251.3,413.3 244.3,477.4"/>
+<circle class="dot" cx="256.0" cy="353.9" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 16 levels: 436 % bytes, MS-SSIM 0.9922</title></circle>
+<circle class="dot" cx="241.5" cy="362.2" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 12 levels: 412 % bytes, MS-SSIM 0.9881</title></circle>
+<circle class="dot" cx="239.6" cy="394.7" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 8 levels: 409 % bytes, MS-SSIM 0.9720</title></circle>
+<circle class="dot" cx="251.3" cy="413.3" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 6 levels: 428 % bytes, MS-SSIM 0.9629</title></circle>
+<circle class="dot" cx="244.3" cy="477.4" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 4 levels: 416 % bytes, MS-SSIM 0.9312</title></circle>
+<text class="panel" x="318" y="322">photo</text>
+<line class="grid" x1="318" x2="518" y1="468.099601476334" y2="468.099601476334"/>
+<text class="tick" x="312" y="471.599601476334" text-anchor="end">0.85</text>
+<line class="grid" x1="318" x2="518" y1="424.7330676508893" y2="424.7330676508893"/>
+<text class="tick" x="312" y="428.2330676508893" text-anchor="end">0.90</text>
+<line class="grid" x1="318" x2="518" y1="381.36653382544466" y2="381.36653382544466"/>
+<text class="tick" x="312" y="384.86653382544466" text-anchor="end">0.95</text>
+<line class="grid" x1="318" x2="518" y1="338" y2="338"/>
+<text class="tick" x="312" y="341.5" text-anchor="end">1.00</text>
+<line class="axis" x1="318" x2="518" y1="498" y2="498"/>
+<text class="tick" x="318" y="513" text-anchor="middle">40 %</text>
+<text class="tick" x="368.2646007722466" y="513" text-anchor="middle">60 %</text>
+<text class="tick" x="418.5292015444932" y="513" text-anchor="middle">80 %</text>
+<text class="tick" x="468.7938023167398" y="513" text-anchor="middle">100 %</text>
+<line class="axis" x1="468.7938023167398" x2="468.7938023167398" y1="338" y2="498" stroke-dasharray="0"/>
+<polyline class="line" stroke="var(--s1)" points="468.8,355.8 439.4,377.7 393.6,401.6 374.4,426.3 344.0,498.0"/>
+<circle class="dot" cx="468.8" cy="355.8" r="4" fill="var(--s1)"><title>Plain quantization (today), 16 levels: 100 % bytes, MS-SSIM 0.9795</title></circle>
+<circle class="dot" cx="439.4" cy="377.7" r="4" fill="var(--s1)"><title>Plain quantization (today), 12 levels: 88 % bytes, MS-SSIM 0.9542</title></circle>
+<circle class="dot" cx="393.6" cy="401.6" r="4" fill="var(--s1)"><title>Plain quantization (today), 8 levels: 70 % bytes, MS-SSIM 0.9267</title></circle>
+<circle class="dot" cx="374.4" cy="426.3" r="4" fill="var(--s1)"><title>Plain quantization (today), 6 levels: 62 % bytes, MS-SSIM 0.8982</title></circle>
+<circle class="dot" cx="344.0" cy="498.0" r="4" fill="var(--s1)"><title>Plain quantization (today), 4 levels: 50 % bytes, MS-SSIM 0.8155</title></circle>
+<polyline class="line" stroke="var(--s2)" points="492.3,351.0 463.2,363.4 427.5,379.3 407.4,392.4 373.1,431.7"/>
+<circle class="dot" cx="492.3" cy="351.0" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 16 levels: 109 % bytes, MS-SSIM 0.9850</title></circle>
+<circle class="dot" cx="463.2" cy="363.4" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 12 levels: 98 % bytes, MS-SSIM 0.9707</title></circle>
+<circle class="dot" cx="427.5" cy="379.3" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 8 levels: 84 % bytes, MS-SSIM 0.9524</title></circle>
+<circle class="dot" cx="407.4" cy="392.4" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 6 levels: 76 % bytes, MS-SSIM 0.9373</title></circle>
+<circle class="dot" cx="373.1" cy="431.7" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 4 levels: 62 % bytes, MS-SSIM 0.8920</title></circle>
+<polyline class="line" stroke="var(--s3)" points="518.0,349.6 500.0,362.7 474.4,380.0 463.9,397.1 454.2,451.0"/>
+<circle class="dot" cx="518.0" cy="349.6" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 16 levels: 120 % bytes, MS-SSIM 0.9866</title></circle>
+<circle class="dot" cx="500.0" cy="362.7" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 12 levels: 112 % bytes, MS-SSIM 0.9716</title></circle>
+<circle class="dot" cx="474.4" cy="380.0" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 8 levels: 102 % bytes, MS-SSIM 0.9515</title></circle>
+<circle class="dot" cx="463.9" cy="397.1" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 6 levels: 98 % bytes, MS-SSIM 0.9319</title></circle>
+<circle class="dot" cx="454.2" cy="451.0" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 4 levels: 94 % bytes, MS-SSIM 0.8697</title></circle>
+<text class="panel" x="580" y="322">map</text>
+<line class="grid" x1="580" x2="780" y1="491.60419486325463" y2="491.60419486325463"/>
+<text class="tick" x="574" y="495.10419486325463" text-anchor="end">0.70</text>
+<line class="grid" x1="580" x2="780" y1="440.4027965755031" y2="440.4027965755031"/>
+<text class="tick" x="574" y="443.9027965755031" text-anchor="end">0.80</text>
+<line class="grid" x1="580" x2="780" y1="389.20139828775154" y2="389.20139828775154"/>
+<text class="tick" x="574" y="392.70139828775154" text-anchor="end">0.90</text>
+<line class="grid" x1="580" x2="780" y1="338" y2="338"/>
+<text class="tick" x="574" y="341.5" text-anchor="end">1.00</text>
+<line class="axis" x1="580" x2="780" y1="498" y2="498"/>
+<text class="tick" x="580" y="513" text-anchor="middle">40 %</text>
+<text class="tick" x="630.6582821599575" y="513" text-anchor="middle">60 %</text>
+<text class="tick" x="681.3165643199148" y="513" text-anchor="middle">80 %</text>
+<text class="tick" x="731.9748464798723" y="513" text-anchor="middle">100 %</text>
+<line class="axis" x1="731.9748464798723" x2="731.9748464798723" y1="338" y2="498" stroke-dasharray="0"/>
+<polyline class="line" stroke="var(--s1)" points="732.0,345.4 721.3,355.6 709.3,365.8 662.7,379.7 653.8,498.0"/>
+<circle class="dot" cx="732.0" cy="345.4" r="4" fill="var(--s1)"><title>Plain quantization (today), 16 levels: 100 % bytes, MS-SSIM 0.9855</title></circle>
+<circle class="dot" cx="721.3" cy="355.6" r="4" fill="var(--s1)"><title>Plain quantization (today), 12 levels: 96 % bytes, MS-SSIM 0.9656</title></circle>
+<circle class="dot" cx="709.3" cy="365.8" r="4" fill="var(--s1)"><title>Plain quantization (today), 8 levels: 91 % bytes, MS-SSIM 0.9458</title></circle>
+<circle class="dot" cx="662.7" cy="379.7" r="4" fill="var(--s1)"><title>Plain quantization (today), 6 levels: 73 % bytes, MS-SSIM 0.9186</title></circle>
+<circle class="dot" cx="653.8" cy="498.0" r="4" fill="var(--s1)"><title>Plain quantization (today), 4 levels: 69 % bytes, MS-SSIM 0.6875</title></circle>
+<polyline class="line" stroke="var(--s2)" points="743.9,342.7 733.7,348.8 718.1,352.2 691.6,360.5 668.5,389.6"/>
+<circle class="dot" cx="743.9" cy="342.7" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 16 levels: 105 % bytes, MS-SSIM 0.9908</title></circle>
+<circle class="dot" cx="733.7" cy="348.8" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 12 levels: 101 % bytes, MS-SSIM 0.9790</title></circle>
+<circle class="dot" cx="718.1" cy="352.2" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 8 levels: 95 % bytes, MS-SSIM 0.9723</title></circle>
+<circle class="dot" cx="691.6" cy="360.5" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 6 levels: 84 % bytes, MS-SSIM 0.9560</title></circle>
+<circle class="dot" cx="668.5" cy="389.6" r="4" fill="var(--s2)"><title>Bayer 2×2 ordered, 4 levels: 75 % bytes, MS-SSIM 0.8993</title></circle>
+<polyline class="line" stroke="var(--s3)" points="780.0,343.0 764.4,349.3 750.5,352.7 723.6,365.3 722.3,385.8"/>
+<circle class="dot" cx="780.0" cy="343.0" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 16 levels: 119 % bytes, MS-SSIM 0.9901</title></circle>
+<circle class="dot" cx="764.4" cy="349.3" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 12 levels: 113 % bytes, MS-SSIM 0.9779</title></circle>
+<circle class="dot" cx="750.5" cy="352.7" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 8 levels: 107 % bytes, MS-SSIM 0.9713</title></circle>
+<circle class="dot" cx="723.6" cy="365.3" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 6 levels: 97 % bytes, MS-SSIM 0.9467</title></circle>
+<circle class="dot" cx="722.3" cy="385.8" r="4" fill="var(--s3)"><title>Floyd–Steinberg, 4 levels: 96 % bytes, MS-SSIM 0.9066</title></circle>
+<text class="label" x="842" y="344">How to read: up is better, left is cheaper.</text>
+<text class="label" x="842" y="361">A strategy beats today only if its curve</text>
+<text class="label" x="842" y="378">passes above-left of the "today" point.</text>
+<text class="label" x="842" y="395">No curve does by more than ~1 %.</text>
+<text class="label" x="842" y="412">At 16 levels Floyd–Steinberg costs</text>
+<text class="label" x="842" y="429">+14 to +336 % bytes; Bayer 2×2 +5 to +28 %.</text>
+<text class="tick" x="16" y="540">narrowband Phase 1 · 35 images · LZ4_compress_default over packed Gray4, 4 containers per frame</text>
+</svg>

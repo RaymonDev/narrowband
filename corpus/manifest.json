@@ -1,0 +1,247 @@
+[
+ {
+  "type": "ui",
+  "name": "dashboard",
+  "file": "ui/dashboard.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "ui",
+  "name": "notifications",
+  "file": "ui/notifications.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "ui",
+  "name": "settings",
+  "file": "ui/settings.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "ui",
+  "name": "music",
+  "file": "ui/music.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "ui",
+  "name": "navigation",
+  "file": "ui/navigation.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "chart",
+  "name": "line-two-series",
+  "file": "chart/line-two-series.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "chart",
+  "name": "area-gradient",
+  "file": "chart/area-gradient.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "chart",
+  "name": "bars",
+  "file": "chart/bars.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "chart",
+  "name": "sparklines",
+  "file": "chart/sparklines.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "chart",
+  "name": "candles",
+  "file": "chart/candles.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "text",
+  "name": "reader-sans-18",
+  "file": "text/reader-sans-18.png",
+  "source": "synthetic, bench/corpus.ts; text: Lewis Carroll, Alice's Adventures in Wonderland (public domain)",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "text",
+  "name": "reader-serif-22",
+  "file": "text/reader-serif-22.png",
+  "source": "synthetic, bench/corpus.ts; text: Lewis Carroll (public domain)",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "text",
+  "name": "code-mono-14",
+  "file": "text/code-mono-14.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "text",
+  "name": "notes-bullets",
+  "file": "text/notes-bullets.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "text",
+  "name": "teleprompter-34",
+  "file": "text/teleprompter-34.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "line-art",
+  "name": "flowchart",
+  "file": "line-art/flowchart.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "line-art",
+  "name": "spirograph",
+  "file": "line-art/spirograph.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "line-art",
+  "name": "gear-drawing",
+  "file": "line-art/gear-drawing.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "line-art",
+  "name": "icon-grid",
+  "file": "line-art/icon-grid.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "line-art",
+  "name": "floor-plan",
+  "file": "line-art/floor-plan.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "game",
+  "name": "platformer",
+  "file": "game/platformer.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "game",
+  "name": "raycaster",
+  "file": "game/raycaster.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "game",
+  "name": "space-shooter",
+  "file": "game/space-shooter.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "game",
+  "name": "falling-blocks",
+  "file": "game/falling-blocks.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "game",
+  "name": "rpg-overworld",
+  "file": "game/rpg-overworld.png",
+  "source": "synthetic, bench/corpus.ts",
+  "license": "MIT (this repository)"
+ },
+ {
+  "type": "photo",
+  "name": "kodim01-stone-wall",
+  "file": "photo/kodim01-stone-wall.png",
+  "source": "Kodak Lossless True Color Image Suite, kodim01",
+  "license": "released by Eastman Kodak for unrestricted use"
+ },
+ {
+  "type": "photo",
+  "name": "kodim03-hats",
+  "file": "photo/kodim03-hats.png",
+  "source": "Kodak Lossless True Color Image Suite, kodim03",
+  "license": "released by Eastman Kodak for unrestricted use"
+ },
+ {
+  "type": "photo",
+  "name": "kodim05-motorbikes",
+  "file": "photo/kodim05-motorbikes.png",
+  "source": "Kodak Lossless True Color Image Suite, kodim05",
+  "license": "released by Eastman Kodak for unrestricted use"
+ },
+ {
+  "type": "photo",
+  "name": "kodim14-rafting",
+  "file": "photo/kodim14-rafting.png",
+  "source": "Kodak Lossless True Color Image Suite, kodim14",
+  "license": "released by Eastman Kodak for unrestricted use"
+ },
+ {
+  "type": "photo",
+  "name": "kodim23-parrots",
+  "file": "photo/kodim23-parrots.png",
+  "source": "Kodak Lossless True Color Image Suite, kodim23",
+  "license": "released by Eastman Kodak for unrestricted use"
+ },
+ {
+  "type": "map",
+  "name": "barcelona-eixample",
+  "file": "map/barcelona-eixample.png",
+  "source": "OpenStreetMap standard tiles, z16 around 41.3917, 2.1649; greyscale, inverted",
+  "license": "© OpenStreetMap contributors (ODbL data, CC BY-SA 2.0 tiles)"
+ },
+ {
+  "type": "map",
+  "name": "paris-centre",
+  "file": "map/paris-centre.png",
+  "source": "OpenStreetMap standard tiles, z16 around 48.8566, 2.3522; greyscale, inverted",
+  "license": "© OpenStreetMap contributors (ODbL data, CC BY-SA 2.0 tiles)"
+ },
+ {
+  "type": "map",
+  "name": "tokyo-shibuya",
+  "file": "map/tokyo-shibuya.png",
+  "source": "OpenStreetMap standard tiles, z16 around 35.6595, 139.7005; greyscale, inverted",
+  "license": "© OpenStreetMap contributors (ODbL data, CC BY-SA 2.0 tiles)"
+ },
+ {
+  "type": "map",
+  "name": "new-york-midtown",
+  "file": "map/new-york-midtown.png",
+  "source": "OpenStreetMap standard tiles, z16 around 40.758, -73.9855; greyscale, inverted",
+  "license": "© OpenStreetMap contributors (ODbL data, CC BY-SA 2.0 tiles)"
+ },
+ {
+  "type": "map",
+  "name": "amsterdam-canals",
+  "file": "map/amsterdam-canals.png",
+  "source": "OpenStreetMap standard tiles, z16 around 52.3676, 4.9041; greyscale, inverted",
+  "license": "© OpenStreetMap contributors (ODbL data, CC BY-SA 2.0 tiles)"
+ }
+]

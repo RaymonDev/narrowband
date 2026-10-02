@@ -1,0 +1,33 @@
+{
+  "name": "narrowband",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Faster images on Even Realities G2 glasses, by encoding for the pipe.",
+  "license": "MIT",
+  "author": "Ramon Gallinad",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "probe:dev": "vite probe",
+    "probe:run": "node probe/run.ts",
+    "probe:analyze": "node probe/analyze.ts",
+    "repro": "node repro/run.ts",
+    "calibrate": "node sim/calibrate.ts",
+    "corpus": "node bench/corpus.ts",
+    "bench": "node bench/run.ts",
+    "bench:report": "node bench/report.ts",
+    "figures": "node bench/figures.ts"
+  },
+  "devDependencies": {
+    "@evenrealities/even_hub_sdk": "^0.0.16",
+    "@evenrealities/evenhub-simulator": "^0.9.5",
+    "@napi-rs/canvas": "^1.0.10",
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2"
+  }
+}

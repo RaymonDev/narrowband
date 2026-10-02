@@ -1,0 +1,287 @@
+{
+ "primary": "msSsim",
+ "goSaving": 0.2,
+ "goTypes": 2,
+ "verdicts": [
+  {
+   "metric": "msSsim",
+   "perType": [
+    {
+     "type": "ui",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "chart",
+     "best": "bayer2",
+     "saving": 0.00754060096996414,
+     "reached": 3,
+     "oracle": 0.00788818402641187
+    },
+    {
+     "type": "text",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "line-art",
+     "best": "bayer2",
+     "saving": 0.012124590500414456,
+     "reached": 2,
+     "oracle": 0.012124590500414456
+    },
+    {
+     "type": "game",
+     "best": "floyd-steinberg",
+     "saving": 0.011674780353235858,
+     "reached": 4,
+     "oracle": 0.011674780353235858
+    },
+    {
+     "type": "photo",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "map",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    }
+   ],
+   "passing": [],
+   "go": false
+  },
+  {
+   "metric": "ssim",
+   "perType": [
+    {
+     "type": "ui",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "chart",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "text",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "line-art",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "game",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "photo",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "map",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    }
+   ],
+   "passing": [],
+   "go": false
+  },
+  {
+   "metric": "ssimBlur",
+   "perType": [
+    {
+     "type": "ui",
+     "best": "bayer4",
+     "saving": 0.007510916859306382,
+     "reached": 4,
+     "oracle": 0.007510916859306382
+    },
+    {
+     "type": "chart",
+     "best": "bayer4",
+     "saving": 0.021400281934859454,
+     "reached": 5,
+     "oracle": 0.023854606328018946
+    },
+    {
+     "type": "text",
+     "best": "bayer2",
+     "saving": 0.006433556474696611,
+     "reached": 4,
+     "oracle": 0.006433556474696611
+    },
+    {
+     "type": "line-art",
+     "best": "floyd-steinberg",
+     "saving": 0.0064187851661072996,
+     "reached": 5,
+     "oracle": 0.00705552947328425
+    },
+    {
+     "type": "game",
+     "best": "floyd-steinberg",
+     "saving": 0.024607629795857178,
+     "reached": 5,
+     "oracle": 0.024607629795857178
+    },
+    {
+     "type": "photo",
+     "best": "bayer2",
+     "saving": 0.0671205769983172,
+     "reached": 5,
+     "oracle": 0.11278280882038463
+    },
+    {
+     "type": "map",
+     "best": "bayer2",
+     "saving": 0.040065560403787746,
+     "reached": 5,
+     "oracle": 0.040065560403787746
+    }
+   ],
+   "passing": [],
+   "go": false
+  },
+  {
+   "metric": "psnr",
+   "perType": [
+    {
+     "type": "ui",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "chart",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "text",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "line-art",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "game",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "photo",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    },
+    {
+     "type": "map",
+     "best": "none",
+     "saving": 0,
+     "reached": 5,
+     "oracle": 0
+    }
+   ],
+   "passing": [],
+   "go": false
+  }
+ ],
+ "u32": {
+  "metric": "msSsim",
+  "perType": [
+   {
+    "type": "ui",
+    "best": "none",
+    "saving": 0,
+    "reached": 5,
+    "oracle": 0
+   },
+   {
+    "type": "chart",
+    "best": "bayer2",
+    "saving": 0.008294375768409657,
+    "reached": 3,
+    "oracle": 0.008294375768409657
+   },
+   {
+    "type": "text",
+    "best": "none",
+    "saving": 0,
+    "reached": 5,
+    "oracle": 0
+   },
+   {
+    "type": "line-art",
+    "best": "bayer2",
+    "saving": 0.013203385615186991,
+    "reached": 2,
+    "oracle": 0.01362915210079101
+   },
+   {
+    "type": "game",
+    "best": "floyd-steinberg",
+    "saving": 0.009394068786082265,
+    "reached": 4,
+    "oracle": 0.009394068786082265
+   },
+   {
+    "type": "photo",
+    "best": "none",
+    "saving": 0,
+    "reached": 5,
+    "oracle": 0
+   },
+   {
+    "type": "map",
+    "best": "none",
+    "saving": 0,
+    "reached": 5,
+    "oracle": 0
+   }
+  ],
+  "passing": [],
+  "go": false
+ }
+}

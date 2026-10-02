@@ -1,0 +1,372 @@
+{
+  "date": "2026-10-02T14:01:35.219Z",
+  "simulator": "0.9.5",
+  "sdk": "0.0.16",
+  "platform": "win32-x64",
+  "cases": [
+    {
+      "index": 0,
+      "layout": "0",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "success",
+          "ms": 4
+        },
+        {
+          "containerID": 2,
+          "result": "success",
+          "ms": 15
+        },
+        {
+          "containerID": 3,
+          "result": "success",
+          "ms": 23
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 4
+        }
+      ],
+      "id": "levels-four-ways",
+      "screenshot": "screens/levels-four-ways.png"
+    },
+    {
+      "index": 1,
+      "layout": "true",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "success",
+          "ms": 16
+        },
+        {
+          "containerID": 2,
+          "result": "success",
+          "ms": 17
+        },
+        {
+          "containerID": 3,
+          "result": "success",
+          "ms": 18
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 18
+        }
+      ],
+      "id": "gray8-all-values",
+      "screenshot": "screens/gray8-all-values.png"
+    },
+    {
+      "index": 2,
+      "layout": "true",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "success",
+          "ms": 2
+        },
+        {
+          "containerID": 2,
+          "result": "success",
+          "ms": 2
+        },
+        {
+          "containerID": 3,
+          "result": "success",
+          "ms": 2
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 2
+        }
+      ],
+      "id": "png8-all-values",
+      "screenshot": "screens/png8-all-values.png"
+    },
+    {
+      "index": 3,
+      "layout": "true",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "success",
+          "ms": 8
+        },
+        {
+          "containerID": 2,
+          "result": "success",
+          "ms": 9
+        },
+        {
+          "containerID": 3,
+          "result": "success",
+          "ms": 9
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 9
+        }
+      ],
+      "id": "gray4-all-bytes",
+      "screenshot": "screens/gray4-all-bytes.png"
+    },
+    {
+      "index": 4,
+      "layout": "true",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "success",
+          "ms": 16
+        },
+        {
+          "containerID": 2,
+          "result": "success",
+          "ms": 2
+        },
+        {
+          "containerID": 3,
+          "result": "success",
+          "ms": 17
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 3
+        }
+      ],
+      "id": "dither-check",
+      "screenshot": "screens/dither-check.png"
+    },
+    {
+      "index": 5,
+      "layout": "true",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "success",
+          "ms": 4
+        },
+        {
+          "containerID": 2,
+          "result": "success",
+          "ms": 4
+        },
+        {
+          "containerID": 3,
+          "result": "success",
+          "ms": 4
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 4
+        }
+      ],
+      "id": "png-rgb-channels",
+      "screenshot": "screens/png-rgb-channels.png"
+    },
+    {
+      "index": 6,
+      "layout": "true",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "success",
+          "ms": 4
+        },
+        {
+          "containerID": 2,
+          "result": "success",
+          "ms": 4
+        },
+        {
+          "containerID": 3,
+          "result": "success",
+          "ms": 7
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 3
+        }
+      ],
+      "id": "png-rgba-alpha",
+      "screenshot": "screens/png-rgba-alpha.png"
+    },
+    {
+      "index": 7,
+      "layout": "true",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "sendFailed",
+          "ms": 2
+        },
+        {
+          "containerID": 2,
+          "result": "success",
+          "ms": 2
+        },
+        {
+          "containerID": 3,
+          "result": "success",
+          "ms": 2
+        },
+        {
+          "containerID": 4,
+          "result": "sendFailed",
+          "ms": 5
+        }
+      ],
+      "id": "odd-width",
+      "screenshot": "screens/odd-width.png"
+    },
+    {
+      "index": 0,
+      "layout": "0",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "sendFailed",
+          "ms": 19
+        },
+        {
+          "containerID": 2,
+          "result": "sendFailed",
+          "ms": 10
+        },
+        {
+          "containerID": 3,
+          "result": "success",
+          "ms": 16
+        },
+        {
+          "containerID": 4,
+          "result": "sendFailed",
+          "ms": 8
+        }
+      ],
+      "id": "magic-collision",
+      "screenshot": "screens/magic-collision.png"
+    },
+    {
+      "index": 0,
+      "layout": "0",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "success",
+          "ms": 16
+        },
+        {
+          "containerID": 2,
+          "result": "success",
+          "ms": 3
+        },
+        {
+          "containerID": 3,
+          "result": "success",
+          "ms": 16
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 7
+        }
+      ],
+      "id": "bug1-raw-gray8-low-values",
+      "screenshot": "screens/bug1-raw-gray8-low-values.png"
+    },
+    {
+      "index": 1,
+      "layout": "true",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "sendFailed",
+          "ms": 15
+        },
+        {
+          "containerID": 2,
+          "result": "success",
+          "ms": 15
+        },
+        {
+          "containerID": 3,
+          "result": "sendFailed",
+          "ms": 15
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 13
+        }
+      ],
+      "id": "bug2-magic-gray8",
+      "screenshot": "screens/bug2-magic-gray8.png"
+    },
+    {
+      "index": 2,
+      "layout": "true",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "sendFailed",
+          "ms": 13
+        },
+        {
+          "containerID": 2,
+          "result": "sendFailed",
+          "ms": 15
+        },
+        {
+          "containerID": 3,
+          "result": "sendFailed",
+          "ms": 13
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 13
+        }
+      ],
+      "id": "bug2-magic-gray8-more",
+      "screenshot": "screens/bug2-magic-gray8-more.png"
+    },
+    {
+      "index": 3,
+      "layout": "true",
+      "results": [
+        {
+          "containerID": 1,
+          "result": "sendFailed",
+          "ms": 8
+        },
+        {
+          "containerID": 2,
+          "result": "sendFailed",
+          "ms": 8
+        },
+        {
+          "containerID": 3,
+          "result": "sendFailed",
+          "ms": 8
+        },
+        {
+          "containerID": 4,
+          "result": "success",
+          "ms": 7
+        }
+      ],
+      "id": "bug2-magic-gray4",
+      "screenshot": "screens/bug2-magic-gray4.png"
+    }
+  ]
+}

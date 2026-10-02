@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.cache/
+results/phase0/screens/*.tmp
+*.log
