@@ -150,13 +150,6 @@ Not bugs, but undocumented, and worth knowing when sending images
 | Wrong raw length | `sendFailed` |
 | Display brightness | Levels 9–15 look identical. g2-kit reports the same shape by eye on G2 |
 
-## Help wanted: real glasses
-
-Both bugs are verified in the official simulator only. The Even app on the phone may or may not share the
-code. If you have G2 glasses, load `repro/` as you would any plugin under development, open `?bug=1` and
-`?bug=2`, and open an issue with what you see. The simulator's README asks for simulator bugs to be
-reported in the Even Realities developer Discord.
-
 ## Background: the narrowband project
 
 The original goal: get images to the glasses faster by encoding them so they compress better under the
