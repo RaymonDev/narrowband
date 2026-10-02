@@ -205,10 +205,6 @@ Node ≥ 24 runs the TypeScript directly; there is no build step.
 - [`@evenrealities/evenhub-simulator` on npm](https://www.npmjs.com/package/@evenrealities/evenhub-simulator)
 - [`image` crate magic numbers (`guess_format`)](https://github.com/image-rs/image/blob/v0.25.9/src/io/free_functions.rs)
 
-## Author
-
-Ramon Gallinad, Telecommunications Engineering, Universitat Autònoma de Barcelona.
-
 ## License
 
 MIT
